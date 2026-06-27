@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akshara Sandhu | Software Engineering Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background-color: #d77191;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 50px 12%;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .tagline {
+            margin-top: 10px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        nav {
+            margin-top: 25px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin-right: 22px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 65px 12%;
+        }
+
+        h2 {
+            font-size: 27px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-image img {
+            width: 260px;
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            border: 1px solid #e6e6e6;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .project-role {
+            color: #666;
+            font-size: 14px;
+            margin-top: 0;
+        }
+
+        .project-image {
+            width: 320px;
+            max-width: 45%;
+            float: right;
+            margin: 0 0 20px 30px;
+            border-radius: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .contact a {
+            color: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-top: 1px solid #e0e0e0;
+            color: #777;
+        }
+
+        @media (max-width: 800px) {
+            header,
+            .section {
+                padding-left: 7%;
+                padding-right: 7%;
+            }
+
+            .about-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .project-image {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Akshara Sandhu</h1>
+    <p class="tagline">
+        Software Engineering Student | Frontend Development | UI Design
+    </p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+        <div class="about-image">
+            <img src="myprofile.jpg" alt="Akshara Sandhu">
+        </div>
+
+        <div class="about-text">
+            <p>
+                I am a Software Engineering student at the University of Victoria
+                with an interest in frontend development, user-interface design,
+                artificial intelligence, and software development.
+            </p>
+
+            <p>
+                I have experience with Python, Java, HTML, CSS, and foundational C.
+                I am also developing my knowledge of data structures and algorithms
+                and learning libraries such as Pandas and PyTorch.
+            </p>
+
+            <p>
+                Through academic and personal projects, I have explored responsive
+                web design, frontend development, technical documentation, and the
+                creation of structured and accessible interfaces.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>Bachelor of Software Engineering</h3>
+
+        <p>
+            University of Victoria – Victoria, British Columbia<br>
+            September 2024 – Present
+        </p>
+
+        <h4>Relevant Coursework in Progress</h4>
+
+        <p>
+            Introduction to Computer Architecture, Operations Research and Linear
+            Programming, and Software Development Methods
+        </p>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects & Technical Experience</h2>
+
+    <div class="card">
+        <h3>Temperature-Regulating Hospital System</h3>
+
+        <img
+            src="temp.jpg"
+            alt="Temperature monitoring system interface"
+            class="project-image"
+        >
+
+        <p class="project-role">HTML, UI Design, Technical Documentation</p>
+
+        <ul>
+            <li>
+                Designed a temperature monitoring and control system for hospital
+                rooms, adjusting AC based on room temperature and day/night cycle.
+            </li>
+
+            <li>
+                Created a user interface using HTML; contributed to a 10+ page
+                technical report and a group presentation.
+            </li>
+
+            <li>
+                Focused on improving patient comfort and hospital efficiency during
+                heatwaves.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Pneumonia Detection Using Ensemble Deep Learning</h3>
+
+        <p class="project-role">
+            Vision Transformers, CapsNet, PyTorch
+        </p>
+
+        <ul>
+            <li>
+                Designed a hybrid model integrating Vision Transformers (ViT) for
+                feature extraction and Capsule Networks (CapsNet) for spatial
+                analysis to detect pneumonia from chest X-ray images.
+            </li>
+
+            <li>
+                Processed 30,000+ DICOM images with bounding box localisation,
+                resizing, and augmentation; leveraged attention maps and spatial
+                hierarchies to enhance model interpretability and diagnostic accuracy.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Personal Web Development Project</h3>
+
+        <p class="project-role">HTML, CSS, Responsive Web Design</p>
+
+        <ul>
+            <li>Designed a personal portfolio website using HTML and CSS.</li>
+
+            <li>
+                Focused on layout structure, UI principles, and clean visual design.
+            </li>
+
+            <li>
+                Gained hands-on experience with frontend design tools and coding
+                best practices.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>User-Centered Registration Form</h3>
+
+        <p class="project-role">Frontend UI Project | HTML, CSS</p>
+
+        <ul>
+            <li>
+                Designed and developed a responsive, multi-field registration form
+                using HTML and CSS with a focus on clean layout and accessibility.
+            </li>
+
+            <li>
+                Integrated basic input validation to simulate real-world form
+                behavior and improve data accuracy.
+            </li>
+
+            <li>
+                Applied frontend development best practices to enhance usability,
+                structure, and visual coherence.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Programming Languages</h3>
+            <p>Python, Java, C (foundational), HTML, CSS</p>
+        </div>
+
+        <div class="card">
+            <h3>Libraries</h3>
+            <p>Pandas, PyTorch</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Concepts</h3>
+            <p>
+                Data Structures and Algorithms, web development, UI design,
+                and prototyping
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tools & Platforms</h3>
+            <p>
+                Visual Studio Code, Eclipse, Sublime Text, MATLAB,
+                Microsoft Word, Excel, and PowerPoint
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Additional Skills</h3>
+            <p>
+                Technical writing, documentation, and frontend interface design
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Languages</h3>
+            <p>English – Fluent<br>Hindi – Native proficiency</p>
+        </div>
+    </div>
+</section>
+
+<section id="leadership" class="section">
+    <h2>Volunteer & Leadership Experience</h2>
+
+    <div class="card">
+        <h3>Mentor, First-Year Interconnect Mentorship Program</h3>
+
+        <p>
+            University of Victoria – Victoria, British Columbia<br>
+            September 2025 – January 2026
+        </p>
+
+        <ul>
+            <li>
+                Selected as a peer mentor supporting first-year international
+                students at UVic.
+            </li>
+
+            <li>
+                Completed mentor training through Mentor Collective and provided
+                one-on-one guidance to an assigned mentee.
+            </li>
+
+            <li>
+                Assisted with academic transition, campus resources, and ongoing
+                student support throughout the year.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Peer Support & Event Assistance</h3>
+
+        <p>
+            Delhi Public School – Karnal, India<br>
+            September 2023 – January 2024
+        </p>
+
+        <ul>
+            <li>
+                Informally supported classmates with academic projects,
+                presentations, and exam preparation.
+            </li>
+
+            <li>
+                Assisted teachers and student organizers during school events and
+                awareness campaigns.
+            </li>
+
+            <li>
+                Participated in community events, helping with setup, logistics,
+                and coordination of younger students.
+            </li>
+
+            <li>
+                Developed collaboration, initiative, and communication skills
+                through regular school engagement.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="awards" class="section">
+    <h2>Scholarships & Awards</h2>
+
+    <div class="card">
+        <ul>
+            <li>
+                <strong>Entrance Scholarship</strong> – University of Victoria
+                ($10,000)
+            </li>
+
+            <li>
+                <strong>International Women in Engineering Scholarship</strong> –
+                University of Victoria ($5,000)
+            </li>
+
+            <li>
+                <strong>Academic Excellence Award</strong> – Presented at Budhijivi
+                Vichar Manch, Haryana, for excellence in Grade 12 board examinations
+            </li>
+
+            <li>
+                <strong>Fine Arts Achievement</strong> – Scored 100/100 in Fine Arts
+                in the Grade 12 Board Examination
+            </li>
+
+            <li>
+                <strong>Scholar Medal</strong> – Honoured for maintaining top
+                academic performance for nine consecutive years
+            </li>
+
+            <li>
+                <strong>Academic Distinction Trophy</strong> – Awarded for securing
+                third place in overall school merit
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:aksharasandhu007@gmail.com">
+            aksharasandhu007@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        <a href="tel:+12504159136">+1 (250) 415-9136</a>
+    </p>
+
+    <p><strong>Location:</strong> Victoria, British Columbia</p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a
+            href="https://github.com/akshara-sandhu"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            github.com/akshara-sandhu
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Akshara Sandhu</p>
+</footer>
+
+</body>
+</html>
